@@ -13,6 +13,7 @@ namespace ZOO
         public int max_health { get; protected set; }
         public State current_state { get; set; }
         public string name { get; private set; }
+        public string type { get; protected set; }
         
         public Animal(string name, int maxHealth)
         {
