@@ -94,7 +94,8 @@ namespace ZOO
         public void GetByState(string state)
         {
             var output = animals.GetByState(state);
-            if (output.Count() == 0) Console.WriteLine("Any {0} animals", state);
+            if (output.Count() == 0 || animals.GetAll().Count()==0)
+                Console.WriteLine("Any {0} animals", state);
             else
             {
                 Console.WriteLine("Your " + state + " animals");

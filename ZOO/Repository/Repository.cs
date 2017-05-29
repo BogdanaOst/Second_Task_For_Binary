@@ -38,7 +38,7 @@ namespace ZOO
         }
         public IEnumerable<Animal> GetByState(string state)//2
         {
-            var result = animals.Where(x => x.current_state.ToString() == state.ToLower());           
+            var result = animals.Where(x => x.current_state.ToString().ToLower() == state.ToLower());           
             return result;
         }
         public IEnumerable<Animal> GetIllTigers()//3
@@ -82,7 +82,10 @@ namespace ZOO
         public IEnumerable<Animal> GetMaxMinHealth()//9
         {
             
-            var result = (animals.OrderBy(a => a.current_health).Take(1).Concat(animals.OrderByDescending(a => a.current_health)));
+            var result = (animals.OrderBy(a => a.current_health).
+                Take(1).
+                Concat
+                (animals.OrderByDescending(a => a.current_health).Take(1)));
             return result;            
                 
         }

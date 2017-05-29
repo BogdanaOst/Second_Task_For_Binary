@@ -74,11 +74,10 @@ namespace ZOO
                     wrapper.GetAllGrouppedByType();
                     return true;
                 case "test2":
-                    if (key.Count() == 2)
-                    {
-                        if (key[1].ToLower() == "dead" || key[1].ToLower() == "hungry" || key[1].ToLower() == "full" || key[1].ToLower() == "ill")
+                    
+                        if ((key.Count() == 2) && (key[1].ToLower() == "dead" || key[1].ToLower() == "hungry" || key[1].ToLower() == "full" || key[1].ToLower() == "ill"))
                             wrapper.GetByState(key[1]);
-                    }
+                    
                     else
                         Console.WriteLine("Invalid input");
                     return true;
