@@ -10,7 +10,7 @@ namespace ZOO.AnimalTypes
     {
         public Fox(string name):base(name,3)
         {
-            
+            type = "fox";   
         }
     }
 }

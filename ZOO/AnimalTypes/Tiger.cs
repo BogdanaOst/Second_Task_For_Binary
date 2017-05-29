@@ -10,6 +10,7 @@ namespace ZOO.AnimalTypes
     {
         public Tiger(string name) : base (name,4)
         {
+            type = "tiger";
         }
     }
 }

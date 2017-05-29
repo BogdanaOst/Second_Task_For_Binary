@@ -43,26 +43,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Helpers\AbstractAnimal.cs" />
+    <Compile Include="AnimalTypes\AbstractAnimal.cs" />
     <Compile Include="AnimalTypes\Bear.cs" />
     <Compile Include="AnimalTypes\Elephant.cs" />
     <Compile Include="AnimalTypes\Fox.cs" />
     <Compile Include="AnimalTypes\Tiger.cs" />
     <Compile Include="AnimalTypes\Wolf.cs" />
-    <Compile Include="Helpers\Command\CureCommand.cs" />
-    <Compile Include="Helpers\Command\FeedCommand.cs" />
-    <Compile Include="Helpers\Command\ICommand.cs" />
-    <Compile Include="Helpers\Command\Invoker.cs" />
-    <Compile Include="Helpers\Command\NextStateCommand.cs" />
-    <Compile Include="Helpers\Factory.cs" />
-    <Compile Include="Helpers\Manager.cs" />
+    <Compile Include="Command\CureCommand.cs" />
+    <Compile Include="Command\FeedCommand.cs" />
+    <Compile Include="Command\ICommand.cs" />
+    <Compile Include="Command\Invoker.cs" />
+    <Compile Include="Command\NextStateCommand.cs" />
+    <Compile Include="Infrastructure\Factory.cs" />
+    <Compile Include="Infrastructure\Manager.cs" />
     <Compile Include="Repository\IRepository.cs" />
     <Compile Include="AnimalTypes\Lion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\Repository.cs" />
-    <Compile Include="Helpers\Wrapper.cs" />
-    <Compile Include="UserPicker.cs" />
+    <Compile Include="Infrastructure\Wrapper.cs" />
+    <Compile Include="Infrastructure\UserPicker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

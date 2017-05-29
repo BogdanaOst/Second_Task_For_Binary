@@ -9,8 +9,8 @@ namespace ZOO.AnimalTypes
     public class Wolf : Animal
     {
         public Wolf(string name) : base(name,4)
-        { 
-
+        {
+            type = "wolf";
         }
     }
 }

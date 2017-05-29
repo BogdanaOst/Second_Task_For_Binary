@@ -10,6 +10,7 @@ namespace ZOO
     {
         public Lion(string name) : base (name,5)
         {
+            type = "lion";
         }
     }
 }

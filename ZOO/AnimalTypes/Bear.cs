@@ -10,7 +10,7 @@ namespace ZOO.AnimalTypes
     {
         public Bear(string name):base(name, 6)
         {
-            
+            type = "bear";
         }
     }
 }
