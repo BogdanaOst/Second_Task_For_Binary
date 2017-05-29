@@ -1,3 +1,3 @@
-# Second_Task_For_Binary
-## The second task for Binary Studio Academy
-The simulation of Zoo
+# Second and third Tasks_For_Binary
+## The second and third tasks for Binary Studio Academy
+The simulation of Zoo. Updated with LINQ based methods
